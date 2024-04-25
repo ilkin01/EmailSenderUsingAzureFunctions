@@ -1,0 +1,23 @@
+{
+  "version": "2.0",
+  "http": {
+    "routePrefix": "api",
+    "correlationId": "X-MS-CLIENT-REQUEST-ID",
+    "maxConcurrentRequests": 100,
+    "maxOutstandingRequests": 200,
+    "dynamicThrottlesEnabled": false,
+    "circuitBreaker": {
+      "enabled": false
+    },
+    "cors": {
+      "allowedOrigins": [
+        "http://localhost:7146"
+      ],
+      "allowedMethods": [
+        "GET",
+        "POST",
+        "OPTIONS"
+      ]
+    }
+  }
+}
